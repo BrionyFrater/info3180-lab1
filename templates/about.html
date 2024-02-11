@@ -4,12 +4,32 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website - About</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"  />
         
     </head>
 
     <body>
-        <h1>Briony Frater</h1>
-        <p>👋 Hi, My name is Briony Frater and I'm 21 years old. I'm a Computer Science major who is interested in Web Develpoment and Cybersecurity. Outside of coding, I love to draw, play games, and play guitar.</p>
+        <div class="about">
+            
+            <div class="profile">
+                <img src="{{url_for('static', filename='images/me.jpg')}}" alt="Briony Frater" id="avatar" width="200" />
+                
+                <div class="info">
+                    <img src="{{url_for('static', filename='images/tape.png')}}" aria-hidden="true" id="tape" width="125" />
+
+                    <img src="{{url_for('static', filename='images/tape2.png')}}" aria-hidden="true" id="tape2" width="125" />
+
+                    <h1>Briony Frater</h1>
+
+                    <p>👋 Hi, My name is Briony Frater and I'm 21 years old. I'm a Computer Science major who is interested in Web Develpoment and Cybersecurity. Outside of coding, I love to draw, play games, and play guitar.</p>
+
+                </div>
+
+            </div>
+
+            <!-- <img src="{{url_for('static', filename='images/drawing.png')}}" alt="A drawing" id="drawing" width="200" /> -->
+
+        </div>
     </body>
 
 </html>

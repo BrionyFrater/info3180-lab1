@@ -1,10 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+@font-face {
+  font-family: Attack Graffiti;
+  src: url('/static/fonts/aAttackGraffiti.otf');
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background-color: #1a1a1a;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
 
+h1{
+  font-size: 5rem;
+  font-family: 'Attack Graffiti';
+  color: #546bff;
+  text-align: center;
+}
+
+p{
+  font-family: 'Single Day';
+  font-size: 1.3rem;
+}
+
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.about{
+  padding: 80px 25%;
+   
+}
+
+#drawing{
+  width: clamp(90%, 500px, 600px);
+  border-radius: 2%;
+  margin-top: 20px;
+}
+
+#avatar{
+  border-radius: 100%;
+}
+
+
+.info{
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: url(/static/images/ruled-paper.jpg);
+  background-size: cover;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#tape{
+  position: absolute;
+  right: -40px;
+  top: -40px;
+}
+
+#tape2{
+  position: absolute;
+  left: -40px;
+  bottom: -30px;
+  transform: rotate(40deg);
+}
+
+.profile{
+  background-image: url(/static/images/doodle.jpg);
+  background-size: contain;
+  padding: 3%;
+  border-radius: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 370px;
 }
