@@ -39,14 +39,10 @@ p{
 
 .about{
   padding: 80px 25%;
-   
+  display: flex;
+  justify-content: center;
 }
 
-#drawing{
-  width: clamp(90%, 500px, 600px);
-  border-radius: 2%;
-  margin-top: 20px;
-}
 
 #avatar{
   border-radius: 100%;
